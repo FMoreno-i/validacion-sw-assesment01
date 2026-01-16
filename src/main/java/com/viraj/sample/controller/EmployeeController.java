@@ -30,10 +30,13 @@ public class EmployeeController {
         return employeeService.updateEmployee(employee);
     }
 
+
+
     @GetMapping("/getall")
     public List<Employee> getAllEmployees() {
         return employeeService.getAllEmployees();
     }
+
 
     @GetMapping("/getone/{employeeId}")
     public Employee getEmployee(@PathVariable(name = "employeeId") Long employeeId) {
@@ -44,4 +47,14 @@ public class EmployeeController {
     public void deleteEmployee(@PathVariable(name = "employeeId") Long employeeId) {
         employeeService.deleteEmployee(employeeId);
     }
+
+
+  
 }
+
+
+
+
+
+
+
